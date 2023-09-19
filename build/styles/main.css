@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #6495ed;
+  color: #e5eeff;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 70%;
+    background-color: hsl(240, 91%, 64%);
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 85%;
+    background-color: #0909d4;
+  }
+}
+.branding {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.menu li {
+  padding: 20px;
+  list-style: none;
+}
+.products {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  list-style: none;
+}
+.products p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.product-button {
+  background-color: #1660eb;
+  color: #e5eeff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #1660eb;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+.product-button:hover {
+  color: #e5eeff;
+  background-color: transparent;
+}
+.redessociais {
+  display: flex;
+  justify-content: space-between;
+  max-width: 260px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+}
+.redessociais li {
+  list-style: none;
+}
+.redessociais li img {
+  transition: all ease 0.3s;
+}
+.redessociais li img:hover {
+  transform: scale(1.5);
+}

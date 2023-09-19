@@ -1,0 +1,111 @@
+@import "maps.less";
+
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #cores [background-color];
+    color: #cores [textColor];
+}
+
+.container
+{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @breakpointMobile
+    {
+        max-width: 70%;
+        background-color: hsl(240, 91%, 64%);
+    }
+    @media @breakpointTablet
+    {
+        max-width: 85%;
+        background-color: #0909d4;
+    }
+
+}
+
+.branding
+{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.menu
+{
+    display: flex;
+    justify-content: center;
+    li
+    {
+        padding: 20px;
+        list-style: none;
+    }
+}
+
+.products
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    list-style: none;
+    p
+    {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+.product-button
+{
+    background-color: #cores [buttonColor];
+    color: #cores [textColor];
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #cores [buttonColor];
+    text-decoration: none;
+    transition: all ease .5s;
+
+    &:hover
+    {
+        color: #cores [textColor];
+        background-color: transparent;
+
+    }
+}
+
+.redessociais
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 260px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+
+    li
+    {
+        list-style: none;
+
+        img
+        {
+            transition: all ease .3s;
+            &:hover
+            {
+                transform: scale(1.5);
+            }
+        }
+    }
+}
+
+
